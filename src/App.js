@@ -10,7 +10,7 @@ const [email,setEmail]=useState("");
 const [submitted,setSubmitted]=useState("Submit");
 const add = () =>{
   console.log(userName)
-  Axios.post("http://localhost:3001/add", {
+  Axios.post("https://appointment0backend.herokuapp.com/add", {
     userName : userName,
     reason : reason,
     email : email,
@@ -76,7 +76,7 @@ const add = () =>{
   <textarea class="form-control" id="reason" rows="3" onChange={(event)=>{setReason(event.target.value)}} ></textarea>
 </div>
 <div id="info_text" className="form-text">You will receive an email regarding confirmation.</div>
-<a href='#'> <button type="button" className="btn btn-primary" id="back" >Back</button></a>
+<a href='https://atharvabokade.github.io/appointment-home/'> <button type="button" className="btn btn-primary" id="back" >Back</button></a>
  <button type="button" className="btn btn-primary" id="sub_btn" onClick={add}>{submitted}</button>   </form>
     </div>
     <div className="footer_custom">
