@@ -10,7 +10,7 @@ const [email,setEmail]=useState("");
 const [submitted,setSubmitted]=useState("Submit");
 const add = () =>{
   console.log(userName)
-  Axios.post("https://appointment0backend.herokuapp.com/add", {
+  Axios.post("https://appointment-backend-new-1.herokuapp.com/add", {
     userName : userName,
     reason : reason,
     email : email,
